@@ -1,0 +1,64 @@
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.710 NotebookApp] Searching ['/root/.jupyter', '/root/.local/etc/jupyter', '/usr/etc/jupyter', '/usr/local/etc/jupyter', '/etc/jupyter'] for config files","time":"2023-11-30T22:27:22.711Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.715 NotebookApp] Searching ['/root/.jupyter', '/root/.local/etc/jupyter', '/usr/etc/jupyter', '/usr/local/etc/jupyter', '/etc/jupyter'] for config files","time":"2023-11-30T22:27:22.715Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.711 NotebookApp] Looking for jupyter_config in /etc/jupyter","time":"2023-11-30T22:27:22.720Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.725 NotebookApp] Looking for jupyter_config in /etc/jupyter","time":"2023-11-30T22:27:22.726Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.712 NotebookApp] Looking for jupyter_config in /usr/local/etc/jupyter","time":"2023-11-30T22:27:22.720Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.713 NotebookApp] Looking for jupyter_config in /usr/etc/jupyter","time":"2023-11-30T22:27:22.721Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.713 NotebookApp] Looking for jupyter_config in /root/.local/etc/jupyter","time":"2023-11-30T22:27:22.721Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.714 NotebookApp] Looking for jupyter_config in /root/.jupyter","time":"2023-11-30T22:27:22.721Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.715 NotebookApp] Looking for jupyter_notebook_config in /etc/jupyter","time":"2023-11-30T22:27:22.722Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.716 NotebookApp] Loaded config file: /etc/jupyter/jupyter_notebook_config.py","time":"2023-11-30T22:27:22.722Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.717 NotebookApp] Looking for jupyter_notebook_config in /usr/local/etc/jupyter","time":"2023-11-30T22:27:22.722Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.718 NotebookApp] Loaded config file: /usr/local/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:22.722Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.718 NotebookApp] Looking for jupyter_notebook_config in /usr/etc/jupyter","time":"2023-11-30T22:27:22.723Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.718 NotebookApp] Looking for jupyter_notebook_config in /root/.local/etc/jupyter","time":"2023-11-30T22:27:22.723Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.718 NotebookApp] Looking for jupyter_notebook_config in /root/.jupyter","time":"2023-11-30T22:27:22.723Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"[D 22:27:22.722 NotebookApp] Loaded config file: /root/.jupyter/jupyter_notebook_config.py","time":"2023-11-30T22:27:22.725Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.726 NotebookApp] Looking for jupyter_config in /usr/local/etc/jupyter","time":"2023-11-30T22:27:22.727Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.727 NotebookApp] Looking for jupyter_config in /usr/etc/jupyter","time":"2023-11-30T22:27:22.729Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.729 NotebookApp] Looking for jupyter_config in /root/.local/etc/jupyter","time":"2023-11-30T22:27:22.730Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.729 NotebookApp] Looking for jupyter_config in /root/.jupyter","time":"2023-11-30T22:27:22.730Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.732 NotebookApp] Looking for jupyter_notebook_config in /etc/jupyter","time":"2023-11-30T22:27:22.732Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.732 NotebookApp] Loaded config file: /etc/jupyter/jupyter_notebook_config.py","time":"2023-11-30T22:27:22.733Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.733 NotebookApp] Looking for jupyter_notebook_config in /usr/local/etc/jupyter","time":"2023-11-30T22:27:22.734Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.734 NotebookApp] Loaded config file: /usr/local/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:22.736Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.734 NotebookApp] Looking for jupyter_notebook_config in /usr/etc/jupyter","time":"2023-11-30T22:27:22.736Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.734 NotebookApp] Looking for jupyter_notebook_config in /root/.local/etc/jupyter","time":"2023-11-30T22:27:22.737Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.734 NotebookApp] Looking for jupyter_notebook_config in /root/.jupyter","time":"2023-11-30T22:27:22.737Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"[D 22:27:22.735 NotebookApp] Loaded config file: /root/.jupyter/jupyter_notebook_config.py","time":"2023-11-30T22:27:22.737Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"    \t/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.230Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"    \t/usr/local/etc/jupyter/jupyter_notebook_config.d/panel-client-jupyter.json","time":"2023-11-30T22:27:23.233Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"    \t/usr/local/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.233Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"    \t/usr/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.235Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"    \t/root/.local/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.236Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"    \t/root/.jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.238Z","v":0}
+{"pid":6,"type":"jupyter","level":30,"msg":"Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret","time":"2023-11-30T22:27:23.249Z","v":0}
+{"pid":6,"type":"jupyter","level":30,"msg":"Authentication of /metrics is OFF, since other authentication is disabled.","time":"2023-11-30T22:27:23.251Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"    \t/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.293Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"    \t/usr/local/etc/jupyter/jupyter_notebook_config.d/panel-client-jupyter.json","time":"2023-11-30T22:27:23.296Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"    \t/usr/local/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.297Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"    \t/usr/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.299Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"    \t/root/.local/etc/jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.305Z","v":0}
+{"pid":7,"type":"jupyter","level":40,"msg":"    \t/root/.jupyter/jupyter_notebook_config.json","time":"2023-11-30T22:27:23.306Z","v":0}
+{"pid":7,"type":"jupyter","level":30,"msg":"Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret","time":"2023-11-30T22:27:23.314Z","v":0}
+{"pid":7,"type":"jupyter","level":30,"msg":"Authentication of /metrics is OFF, since other authentication is disabled.","time":"2023-11-30T22:27:23.316Z","v":0}
+{"pid":6,"type":"jupyter","level":30,"msg":"google.colab serverextension initialized.","time":"2023-11-30T22:27:23.330Z","v":0}
+{"pid":7,"type":"jupyter","level":30,"msg":"google.colab serverextension initialized.","time":"2023-11-30T22:27:23.375Z","v":0}
+{"pid":6,"type":"jupyter","level":30,"msg":"Serving notebooks from local directory: /","time":"2023-11-30T22:27:26.437Z","v":0}
+{"pid":6,"type":"jupyter","level":30,"msg":"Jupyter Notebook 6.5.5 is running at:","time":"2023-11-30T22:27:26.438Z","v":0}
+{"pid":7,"type":"jupyter","level":30,"msg":"Serving notebooks from local directory: /","time":"2023-11-30T22:27:26.435Z","v":0}
+{"pid":6,"type":"jupyter","level":30,"msg":"http://172.28.0.12:9000/","time":"2023-11-30T22:27:26.439Z","v":0}
+{"pid":7,"type":"jupyter","level":30,"msg":"Jupyter Notebook 6.5.5 is running at:","time":"2023-11-30T22:27:26.439Z","v":0}
+{"pid":7,"type":"jupyter","level":30,"msg":"http://172.28.0.2:9000/","time":"2023-11-30T22:27:26.440Z","v":0}
+{"pid":7,"type":"jupyter","level":30,"msg":"Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).","time":"2023-11-30T22:27:26.441Z","v":0}
+{"pid":6,"type":"jupyter","level":30,"msg":"Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).","time":"2023-11-30T22:27:26.440Z","v":0}
+{"pid":6,"type":"jupyter","level":30,"msg":"Kernel started: 61615e3c-f749-4b08-abd0-7f71dce7d7d0, name: python3","time":"2023-11-30T22:34:14.607Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"2023-11-30 22:55:33.599824: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered","time":"2023-11-30T22:55:33.600Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"2023-11-30 22:55:33.599893: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered","time":"2023-11-30T22:55:33.600Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"2023-11-30 22:55:33.599930: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered","time":"2023-11-30T22:55:33.601Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"2023-11-30 22:55:35.113734: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT","time":"2023-11-30T22:55:35.116Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x7fd56bb08700>","time":"2023-11-30T23:11:58.813Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x7fd56bb08700>","time":"2023-11-30T23:11:58.814Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x7fd56bb091e0>","time":"2023-11-30T23:13:37.117Z","v":0}
+{"pid":6,"type":"jupyter","level":30,"msg":"KernelRestarter: restarting kernel (1/5), keep random ports","time":"2023-11-30T23:16:11.605Z","v":0}
+{"pid":6,"type":"jupyter","level":40,"msg":"WARNING:root:kernel 61615e3c-f749-4b08-abd0-7f71dce7d7d0 restarted","time":"2023-11-30T23:16:11.605Z","v":0}
