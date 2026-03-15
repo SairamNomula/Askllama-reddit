@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  askllama:
+    build: .
+    image: askllama:latest
+    ports:
+      - "7860:7860"
+    environment:
+      # Copy your .env file or set these directly
+      HF_TOKEN: ${HF_TOKEN}
+      MODEL_PATH: /model
+      MAX_NEW_TOKENS: ${MAX_NEW_TOKENS:-256}
+    volumes:
+      # Mount your trained model into the container
+      - ./results/merged:/model:ro
+      # Persist logs
+      - ./logs:/app/logs
+    # Remove the deploy section if you don't have an NVIDIA GPU
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped

@@ -13,8 +13,11 @@ or it falls back to the base Llama-2-7b model.
 
 from __future__ import annotations
 
+import logging
 import os
 import sys
+import time
+from pathlib import Path
 
 # Load .env file if python-dotenv is available
 try:
@@ -28,6 +31,22 @@ import gradio as gr
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, TextIteratorStreamer
 from peft import PeftModel
 from threading import Thread
+
+# ---------------------------------------------------------------------------
+# Logging setup
+# ---------------------------------------------------------------------------
+_LOG_DIR = Path(__file__).resolve().parent / "logs"
+_LOG_DIR.mkdir(exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler(_LOG_DIR / "applogs.log"),
+        logging.StreamHandler(sys.stdout),
+    ],
+)
+logger = logging.getLogger("askllama")
 
 from config import (
     BASE_MODEL_NAME,
@@ -78,14 +97,14 @@ def load_model():
 
     # Try loading the fine-tuned merged model first
     if os.path.isdir(MODEL_PATH):
-        print(f"Loading fine-tuned model from {MODEL_PATH}...")
+        logger.info("Loading fine-tuned model from %s", MODEL_PATH)
         model = AutoModelForCausalLM.from_pretrained(MODEL_PATH, **load_kwargs)
         tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, trust_remote_code=True)
     else:
         # Fallback: try loading adapter on top of base model
         adapter_path = str(OUTPUT_DIR / "final_adapter")
         if os.path.isdir(adapter_path):
-            print(f"Loading base model + LoRA adapter from {adapter_path}...")
+            logger.info("Loading base model + LoRA adapter from %s", adapter_path)
             base = AutoModelForCausalLM.from_pretrained(
                 BASE_MODEL_NAME, token=HF_TOKEN, **load_kwargs,
             )
@@ -95,11 +114,11 @@ def load_model():
             )
         else:
             if not HF_TOKEN:
-                print("ERROR: No fine-tuned model found and HF_TOKEN is not set.")
-                print("  Set HF_TOKEN in your .env file or environment to download the base model.")
+                logger.error("No fine-tuned model found and HF_TOKEN is not set.")
+                logger.error("Set HF_TOKEN in your .env file or environment to download the base model.")
                 sys.exit(1)
-            print(f"WARNING: No fine-tuned model found. Loading base {BASE_MODEL_NAME}...")
-            print("  Run training first (src/model.ipynb) to get better results.")
+            logger.warning("No fine-tuned model found. Loading base %s.", BASE_MODEL_NAME)
+            logger.warning("Run training first (scripts/train.py or src/model.ipynb).")
             model = AutoModelForCausalLM.from_pretrained(
                 BASE_MODEL_NAME, token=HF_TOKEN, **load_kwargs,
             )
@@ -109,7 +128,7 @@ def load_model():
 
     tokenizer.pad_token = tokenizer.eos_token
     model.eval()
-    print("Model loaded and ready!")
+    logger.info("Model loaded and ready!")
 
 
 def get_device():
@@ -132,6 +151,9 @@ def generate_response(message: str, history: list, temperature: float, max_token
     if model is None:
         yield "Model not loaded. Please wait..."
         return
+
+    logger.info("Query: %s", message[:120].replace("\n", " "))
+    t0 = time.time()
 
     prompt = format_prompt(message, history)
     device = get_device()
@@ -160,6 +182,9 @@ def generate_response(message: str, history: list, temperature: float, max_token
         yield partial_response
 
     thread.join()
+    elapsed = time.time() - t0
+    token_count = len(tokenizer.encode(partial_response))
+    logger.info("Response: %d tokens in %.1fs (%.1f tok/s)", token_count, elapsed, token_count / max(elapsed, 1e-3))
 
 
 # ---------------------------------------------------------------------------
@@ -206,6 +231,8 @@ def create_app():
 
 
 if __name__ == "__main__":
+    logger.info("Starting Askllama-reddit chat interface...")
     load_model()
     app = create_app()
+    logger.info("Launching Gradio on http://0.0.0.0:7860")
     app.launch(server_name="0.0.0.0", server_port=7860, share=False)
